@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.h1 h1{
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  font-size: 4em;
+  color: #2da2a1;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #F1F1F1;
+}
+
+h2 {
+  text-align: center;
+  position: absolute;
+  left: 26%;
+  top: 55%;
+  font-size: 2em;
+  color: #2da2a1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  background-color: #2da2a1;
+  width: 20%;
+  height: 100vh;
+  display: none;
+}
+
+.navbar ul {
+  overflow: hidden;
+  list-style-type: none;
+  padding-top: 50%;
+  margin: 0;
+}
+
+.navbar li {
+  display: block;
+  margin: 0;
+  padding: 5% 50px 5% 0px;
+  width: 100%;
+}
+
+.navbar input:hover{
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.color-home {
+  color: #F1F1F1;
+}
+
+.color-green {
+  color: #5CEE9C;
+}
+
+.color-red {
+  color: #C2171F;
+}
+
+.color-purple{
+  color: #854A9E;
+}
+
+.color-orange {
+  color: #FF8F2E
+}
+
+.hamburger {
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  float: left;
+  transition: opacity .3s;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background: #1d4444;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.hamburger.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isactive .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.isactive .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.navbar {
+  transition: all 2s ease-in-out;
+}
+
+.navbar.active {
+  display: block;
+  animation: fade .5s;
+}
+
+@keyframes fade {
+  from{transform: translateX(-200px); opacity: 0;}
+  to {transform: translateX(0px); opacity: 1;}
+}
